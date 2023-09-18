@@ -28,6 +28,13 @@ a,
 
 /* DESKTOP NAV */
 
+#desktop-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* or any high number */
+  background-color: rgba(255, 255, 255, 0.95); /* white with 80% opacity */
+}
+
 nav,
 .nav-links {
   display: flex;
@@ -70,6 +77,10 @@ a:hover {
 
 #hamburger-nav {
   display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* or any high number */
+  background-color: rgba(255, 255, 255, 0.95); /* white with 80% opacity */
 }
 
 .hamburger-menu {
@@ -112,6 +123,13 @@ a:hover {
   color: black;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
+}
+
+.menu-links a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: rgb(181, 181, 181);
 }
 
 .menu-links li {
@@ -167,6 +185,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  padding-top: 130px;
 }
 
 .section__pic-container {
@@ -202,7 +221,7 @@ section {
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -211,6 +230,10 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+}
+
+.icon:hover {
+  opacity: 0.65;
 }
 
 /* BUTTONS */
@@ -265,6 +288,7 @@ section {
 
 #about {
   position: relative;
+  padding-top: 130px;
 }
 
 .about-containers {
@@ -318,6 +342,7 @@ section {
 
 #experience {
   position: relative;
+  padding-top: 130px;
 }
 
 .experience-sub-title {
@@ -357,6 +382,7 @@ article .icon {
 
 #projects {
   position: relative;
+  padding-top: 130px;
 }
 
 .color-container {
