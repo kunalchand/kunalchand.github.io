@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kunal Chand</title>
-    <link rel="icon" href="./assets/profile-pic.png" type="image/x-icon" />
+    <link rel="icon" href="./assets/tab-logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -14,6 +14,7 @@
       <div class="logo">Kunal Chand</div>
       <div>
         <ul class="nav-links">
+          <li><a href="#profile">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -22,14 +23,15 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Kunal Chand</div>
+      <div class="logo"><a href="#profile">Kunal Chand</a></div>
       <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
+        <div class="hamburger-icon" onclick="toggleMenu(event)">
           <span></span>
           <span></span>
           <span></span>
         </div>
         <div class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
@@ -48,7 +50,8 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onmouseover="showUrl(this, 'Kunal_Chand.pdf')"
+            onclick="window.open('./assets/Kunal_Chand.pdf')"
           >
             Resume
           </button>
@@ -57,15 +60,47 @@
               src="./assets/linkedin.png"
               alt="My LinkedIn profile"
               class="icon"
-              onclick="location.href='https://linkedin.com/'"
+              onmouseover="showUrl(this, 'https://www.linkedin.com/in/kunal-chand')"
+              onclick="window.open('https://www.linkedin.com/in/kunal-chand')"
             />
             <img
               src="./assets/github.png"
-              alt="My Github profile"
+              alt="My GitHub profile"
               class="icon"
-              onclick="location.href='https://github.com/'"
+              onmouseover="showUrl(this, 'https://github.com/kunalchand')"
+              onclick="window.open('https://github.com/kunalchand')"
+            />
+            <img
+              src="./assets/leetcode.png"
+              alt="My LeetCode profile"
+              class="icon"
+              onmouseover="showUrl(this, 'https://leetcode.com/kunalchand234/')"
+              onclick="window.open('https://leetcode.com/kunalchand234/')"
+            />
+            <img
+              src="./assets/email.png"
+              alt="My Email"
+              class="icon"
+              onmouseover="showUrl(this, 'kunalchand234@gmail.com')"
+              onclick="window.open('mailto:kunalchand234@gmail.com')"
+            />
+            <img
+              src="./assets/phone.png"
+              alt="My Phone"
+              class="icon"
+              onmouseover="showUrl(this, '+1 (716) 292-5504')"
+            />
+            <img
+              src="./assets/location.png"
+              alt="My Phone"
+              class="icon"
+              onmouseover="showUrl(this, 'Buffalo, New York, USA')"
             />
           </div>
+        </div>
+        <div>
+          <!-- Add Info Bar Here -->
+          Info Bar
         </div>
       </div>
     </section>
@@ -366,6 +401,7 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
+            <li><a href="#profile">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
