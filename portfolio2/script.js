@@ -23,7 +23,7 @@ document.addEventListener("click", function (event) {
   if (menuOpen) {
     toggleMenu();
   }
-  infoBar.style.display = "none";
+  fadeOutInfo(infoBar);
 });
 
 const emailIcon = document.getElementById("email-icon");
@@ -34,18 +34,53 @@ const infoBar = document.getElementById("info-bar");
 const infoText = document.getElementById("info-text");
 const copyButton = document.getElementById("copy-button");
 
+function fadeInInfo(element) {
+  // Set initial opacity to 0
+  element.style.opacity = 0;
+
+  // Fade in over 0.35 seconds
+  let opacity = 0;
+  const interval = setInterval(() => {
+    opacity += 0.1;
+    element.style.opacity = opacity;
+    if (opacity >= 1) {
+      clearInterval(interval);
+    }
+  }, 35);
+}
+
+function fadeOutInfo(element) {
+  // Set initial opacity to 1
+  element.style.opacity = 1;
+
+  // Fade out over 0.35 seconds
+  let opacity = 1;
+  const interval = setInterval(() => {
+    opacity -= 0.1;
+    element.style.opacity = opacity;
+    if (opacity <= 0) {
+      clearInterval(interval);
+      element.style.display = "none";
+    }
+  }, 35);
+}
+
 emailIcon.addEventListener("click", function () {
   infoBar.style.display = "flex";
   infoText.textContent = "kunalchand234@gmail.com";
   copyButton.style.display = "flex";
   event.stopPropagation();
+
+  fadeInInfo(infoBar);
 });
 
 phoneIcon.addEventListener("click", function () {
   infoBar.style.display = "flex";
   infoText.textContent = "+1 (716) 292-5504";
-  copyButton.style.display = "none";
+  copyButton.style.display = "flex";
   event.stopPropagation();
+
+  fadeInInfo(infoBar);
 });
 
 locationIcon.addEventListener("click", function () {
@@ -53,6 +88,8 @@ locationIcon.addEventListener("click", function () {
   infoText.textContent = "Buffalo, New York, USA";
   copyButton.style.display = "none";
   event.stopPropagation();
+
+  fadeInInfo(infoBar);
 });
 
 infoBar.addEventListener("click", function () {
