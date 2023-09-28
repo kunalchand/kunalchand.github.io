@@ -68,6 +68,10 @@
   .btn-container {
     flex-wrap: wrap;
   }
+  .contact-info-upper-container {
+    gap: 1rem;
+    padding: 1rem;
+  }
   .contact-info-container {
     margin: 0;
   }

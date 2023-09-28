@@ -33,7 +33,6 @@ const locationIcon = document.getElementById("location-icon");
 const infoBar = document.getElementById("info-bar");
 const infoText = document.getElementById("info-text");
 const copyButton = document.getElementById("copy-button");
-const copyPopup = document.getElementById("copy-popup-text");
 
 let infoBarStatus = 0;
 
@@ -69,7 +68,6 @@ function fadeOutInfo(element) {
     element.style.opacity = opacity;
     if (opacity <= 0) {
       clearInterval(interval);
-      element.style.display = "flex";
     }
   }, 35);
 
