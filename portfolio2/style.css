@@ -285,6 +285,45 @@ section {
   gap: 1rem;
 }
 
+/* INFO BAR */
+
+.info-bar {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 1rem;
+
+  margin-top: 0.7rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #000;
+  color: #fff;
+
+  border: 2px solid #000;
+  border-radius: 100px;
+
+  padding: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+#copy-button {
+  display: flex;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+#copy-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
 /* ABOUT SECTION */
 
 #about {

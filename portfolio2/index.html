@@ -81,26 +81,27 @@
               src="./assets/email.png"
               alt="My Email"
               class="icon"
-              onmouseover="showUrl(this, 'kunalchand234@gmail.com')"
-              onclick="window.open('mailto:kunalchand234@gmail.com')"
+              id="email-icon"
             />
             <img
               src="./assets/phone.png"
               alt="My Phone"
               class="icon"
+              id="phone-icon"
               onmouseover="showUrl(this, '+1 (716) 292-5504')"
             />
             <img
               src="./assets/location.png"
-              alt="My Phone"
+              alt="My Location"
               class="icon"
+              id="location-icon"
               onmouseover="showUrl(this, 'Buffalo, New York, USA')"
             />
           </div>
         </div>
-        <div>
-          <!-- Add Info Bar Here -->
-          Info Bar
+        <div class="info-bar" id="info-bar">
+          <span id="info-text"></span>
+          <button id="copy-button">Copy</button>
         </div>
       </div>
     </section>
