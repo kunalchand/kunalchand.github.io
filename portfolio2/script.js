@@ -33,8 +33,13 @@ const locationIcon = document.getElementById("location-icon");
 const infoBar = document.getElementById("info-bar");
 const infoText = document.getElementById("info-text");
 const copyButton = document.getElementById("copy-button");
+const copyPopup = document.getElementById("copy-popup-text");
+
+let infoBarStatus = 0;
 
 function fadeInInfo(element) {
+  infoBar.style.backgroundColor = "#000";
+
   // Set initial opacity to 0
   element.style.opacity = 0;
 
@@ -47,11 +52,15 @@ function fadeInInfo(element) {
       clearInterval(interval);
     }
   }, 35);
+
+  infoBarStatus = 1;
 }
 
 function fadeOutInfo(element) {
-  // Set initial opacity to 1
-  element.style.opacity = 1;
+  // If already faded out, do nothing
+  if (infoBarStatus === 0) {
+    return;
+  }
 
   // Fade out over 0.35 seconds
   let opacity = 1;
@@ -60,13 +69,14 @@ function fadeOutInfo(element) {
     element.style.opacity = opacity;
     if (opacity <= 0) {
       clearInterval(interval);
-      element.style.display = "none";
+      element.style.display = "flex";
     }
   }, 35);
+
+  infoBarStatus = 0;
 }
 
 emailIcon.addEventListener("click", function () {
-  infoBar.style.display = "flex";
   infoText.textContent = "kunalchand234@gmail.com";
   copyButton.style.display = "flex";
   event.stopPropagation();
@@ -75,7 +85,6 @@ emailIcon.addEventListener("click", function () {
 });
 
 phoneIcon.addEventListener("click", function () {
-  infoBar.style.display = "flex";
   infoText.textContent = "+1 (716) 292-5504";
   copyButton.style.display = "flex";
   event.stopPropagation();
@@ -84,7 +93,6 @@ phoneIcon.addEventListener("click", function () {
 });
 
 locationIcon.addEventListener("click", function () {
-  infoBar.style.display = "flex";
   infoText.textContent = "Buffalo, New York, USA";
   copyButton.style.display = "none";
   event.stopPropagation();
@@ -95,6 +103,25 @@ locationIcon.addEventListener("click", function () {
 infoBar.addEventListener("click", function () {
   event.stopPropagation();
 });
+
+copyButton.addEventListener("click", () => {
+  // Copy content of infoText to clipboard
+  navigator.clipboard
+    .writeText(infoText.innerText)
+    .then(() => {
+      // Show the copy confirmation
+      showConfirmation();
+    })
+    .catch((error) => {
+      console.error("Unable to copy text: ", error);
+    });
+});
+
+function showConfirmation() {
+  infoText.textContent = "Copied!";
+  infoBar.style.backgroundColor = "#4CAF50";
+  copyButton.style.display = "none";
+}
 
 function showUrl(img, url_link) {
   img.dataset.url = url_link;

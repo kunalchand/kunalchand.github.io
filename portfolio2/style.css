@@ -288,7 +288,7 @@ section {
 /* INFO BAR */
 
 .info-bar {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: fit-content;
@@ -307,6 +307,8 @@ section {
   padding: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+
+  opacity: 0;
 }
 
 #copy-button {
