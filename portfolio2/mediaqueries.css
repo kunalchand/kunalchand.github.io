@@ -69,9 +69,19 @@
     flex-wrap: wrap;
   }
   .contact-info-upper-container {
-    gap: 0.5rem;
-    padding: 0.85rem;
+    width: 70%;
+    gap: 1rem;
+    padding: 1rem;
   }
+
+  #phone-icon {
+    padding-left: 24.5px;
+  }
+
+  #location-icon {
+    padding-left: 14px;
+  }
+
   .contact-info-container {
     margin: 0;
   }
