@@ -33,6 +33,7 @@ const locationIcon = document.getElementById("location-icon");
 const infoBar = document.getElementById("info-bar");
 const infoText = document.getElementById("info-text");
 const copyButton = document.getElementById("copy-button");
+const mapButton = document.getElementById("map-button");
 
 let infoBarStatus = 0;
 
@@ -77,6 +78,7 @@ function fadeOutInfo(element) {
 emailIcon.addEventListener("click", function () {
   infoText.textContent = "kunalchand234@gmail.com";
   copyButton.style.display = "flex";
+  mapButton.style.display = "none";
   event.stopPropagation();
 
   fadeInInfo(infoBar);
@@ -85,6 +87,7 @@ emailIcon.addEventListener("click", function () {
 phoneIcon.addEventListener("click", function () {
   infoText.textContent = "+1 (716) 292-5504";
   copyButton.style.display = "flex";
+  mapButton.style.display = "none";
   event.stopPropagation();
 
   fadeInInfo(infoBar);
@@ -93,6 +96,7 @@ phoneIcon.addEventListener("click", function () {
 locationIcon.addEventListener("click", function () {
   infoText.textContent = "Buffalo, New York, USA";
   copyButton.style.display = "none";
+  mapButton.style.display = "flex";
   event.stopPropagation();
 
   fadeInInfo(infoBar);
@@ -115,10 +119,27 @@ copyButton.addEventListener("click", () => {
     });
 });
 
+mapButton.addEventListener("click", () => {
+  // Open a link in new tab
+  const url = "https://www.google.com/maps/place/" + infoText.innerText;
+  window.open(url, "_blank");
+
+  waitAndDisappear(infoBar, 750);
+});
+
 function showConfirmation() {
   infoText.textContent = "Copied!";
   infoBar.style.backgroundColor = "#4CAF50";
   copyButton.style.display = "none";
+  mapButton.style.display = "none";
+
+  waitAndDisappear(infoBar, 750);
+}
+
+function waitAndDisappear(element, waitTime) {
+  setTimeout(() => {
+    fadeOutInfo(element);
+  }, waitTime);
 }
 
 function showUrl(img, url_link) {

@@ -330,6 +330,21 @@ section {
   color: #fff;
 }
 
+#map-button {
+  display: flex;
+  background-color: #8cff006d;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+#map-button:hover {
+  background-color: #8cff0038;
+  color: #fff;
+}
+
 /* ABOUT SECTION */
 
 #about {
