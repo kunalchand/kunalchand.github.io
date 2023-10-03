@@ -363,7 +363,7 @@ section {
 
 #phone-button {
   display: flex;
-  background-color: #ff0099db;
+  background-color: #8cff007d;
   color: #fff;
   border: none;
   border-radius: 100px;
@@ -372,13 +372,13 @@ section {
 }
 
 #phone-button:hover {
-  background-color: #ff009980;
+  background-color: #8cff0041;
   color: #fff;
 }
 
 #map-button {
   display: flex;
-  background-color: #8cff006d;
+  background-color: #007bffdd;
   color: #fff;
   border: none;
   border-radius: 100px;
@@ -387,7 +387,7 @@ section {
 }
 
 #map-button:hover {
-  background-color: #8cff0038;
+  background-color: #007bff82;
   color: #fff;
 }
 

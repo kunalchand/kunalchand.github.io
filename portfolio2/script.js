@@ -93,7 +93,7 @@ goToTopButton.addEventListener("click", () => {
 
 emailIcon.addEventListener("click", function () {
   infoText.textContent = "kunalchand234@gmail.com";
-  copyButton.style.display = "flex";
+  copyButton.style.display = "none";
   emailButton.style.display = "flex";
   phoneButton.style.display = "none";
   mapButton.style.display = "none";
@@ -104,7 +104,7 @@ emailIcon.addEventListener("click", function () {
 
 phoneIcon.addEventListener("click", function () {
   infoText.textContent = "+1 (716) 292-5504";
-  copyButton.style.display = "flex";
+  copyButton.style.display = "none";
   emailButton.style.display = "none";
   phoneButton.style.display = "flex";
   mapButton.style.display = "none";
