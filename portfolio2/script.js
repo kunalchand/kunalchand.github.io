@@ -26,6 +26,8 @@ document.addEventListener("click", function (event) {
   fadeOutInfo(infoBar);
 });
 
+const goToTopButton = document.getElementById("go-to-top-button");
+
 const emailIcon = document.getElementById("email-icon");
 const phoneIcon = document.getElementById("phone-icon");
 const locationIcon = document.getElementById("location-icon");
@@ -74,6 +76,18 @@ function fadeOutInfo(element) {
 
   infoBarStatus = 0;
 }
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 200) {
+    goToTopButton.style.display = "block";
+  } else {
+    goToTopButton.style.display = "none";
+  }
+});
+
+goToTopButton.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
 emailIcon.addEventListener("click", function () {
   infoText.textContent = "kunalchand234@gmail.com";
