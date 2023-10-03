@@ -18,7 +18,7 @@ html {
 #go-to-top-button {
   display: none;
   position: fixed;
-  bottom: 25px;
+  bottom: 35px;
   right: 35px;
   z-index: 999;
   cursor: pointer;
@@ -333,7 +333,7 @@ section {
 
 #copy-button {
   display: flex;
-  background-color: #007bff;
+  background-color: #007bffdd;
   color: #fff;
   border: none;
   border-radius: 100px;
@@ -342,7 +342,37 @@ section {
 }
 
 #copy-button:hover {
-  background-color: #0056b3;
+  background-color: #007bff82;
+  color: #fff;
+}
+
+#email-button {
+  display: flex;
+  background-color: #ff1500;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+#email-button:hover {
+  background-color: #ff1500b2;
+  color: #fff;
+}
+
+#phone-button {
+  display: flex;
+  background-color: #ff0099db;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+#phone-button:hover {
+  background-color: #ff009980;
   color: #fff;
 }
 

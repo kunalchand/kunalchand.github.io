@@ -35,6 +35,8 @@ const locationIcon = document.getElementById("location-icon");
 const infoBar = document.getElementById("info-bar");
 const infoText = document.getElementById("info-text");
 const copyButton = document.getElementById("copy-button");
+const emailButton = document.getElementById("email-button");
+const phoneButton = document.getElementById("phone-button");
 const mapButton = document.getElementById("map-button");
 
 let infoBarStatus = 0;
@@ -92,6 +94,8 @@ goToTopButton.addEventListener("click", () => {
 emailIcon.addEventListener("click", function () {
   infoText.textContent = "kunalchand234@gmail.com";
   copyButton.style.display = "flex";
+  emailButton.style.display = "flex";
+  phoneButton.style.display = "none";
   mapButton.style.display = "none";
   event.stopPropagation();
 
@@ -101,6 +105,8 @@ emailIcon.addEventListener("click", function () {
 phoneIcon.addEventListener("click", function () {
   infoText.textContent = "+1 (716) 292-5504";
   copyButton.style.display = "flex";
+  emailButton.style.display = "none";
+  phoneButton.style.display = "flex";
   mapButton.style.display = "none";
   event.stopPropagation();
 
@@ -110,6 +116,8 @@ phoneIcon.addEventListener("click", function () {
 locationIcon.addEventListener("click", function () {
   infoText.textContent = "Buffalo, New York, USA";
   copyButton.style.display = "none";
+  emailButton.style.display = "none";
+  phoneButton.style.display = "none";
   mapButton.style.display = "flex";
   event.stopPropagation();
 
@@ -133,6 +141,22 @@ copyButton.addEventListener("click", () => {
     });
 });
 
+emailButton.addEventListener("click", () => {
+  const url = "mailto:kunalchand234@gmail.com";
+  // window.open(url, "_blank");
+  window.location.href = url;
+
+  waitAndDisappear(infoBar, 750);
+});
+
+phoneButton.addEventListener("click", () => {
+  const url = "tel:+1 (716) 292-5504";
+  // window.open(url, "_blank");
+  window.location.href = url;
+
+  waitAndDisappear(infoBar, 750);
+});
+
 mapButton.addEventListener("click", () => {
   // Open a link in new tab
   const url = "https://www.google.com/maps/place/" + infoText.innerText;
@@ -145,6 +169,8 @@ function showConfirmation() {
   infoText.textContent = "Copied!";
   infoBar.style.backgroundColor = "#4CAF50";
   copyButton.style.display = "none";
+  emailButton.style.display = "none";
+  phoneButton.style.display = "none";
   mapButton.style.display = "none";
 
   waitAndDisappear(infoBar, 750);
