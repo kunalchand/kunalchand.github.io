@@ -47,9 +47,11 @@ a,
 #desktop-nav {
   position: fixed;
   width: 100%;
+  height: 75px;
   z-index: 1000; /* or any high number */
   background-color: rgba(255, 255, 255, 0.95); /* white with 80% opacity */
   padding-top: -130px;
+  flex: wrap;
 }
 
 nav,
@@ -432,6 +434,38 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+}
+
+#ub-logo {
+  transform: scale(0.75);
+}
+
+#nrif-ft-logo {
+  transform: scale(1.5);
+}
+
+#bachelors-container,
+#masters-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+}
+
+#bachelors-container {
+  text-indent: 10px;
+}
+
+#nrift-container,
+#student-assistant-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+}
+
+#nrift-container {
+  text-indent: 20px;
 }
 
 .section-container {
