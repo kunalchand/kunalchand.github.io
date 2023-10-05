@@ -12,19 +12,19 @@
   <body>
     <img id="go-to-top-button" src="./assets/arrow-up.png" alt="Go to top" />
     <nav id="desktop-nav">
-      <div class="logo"><a href="#profile">Kunal Chand</a></div>
+      <div class="logo"><a href="#home">Kunal Chand</a></div>
       <div>
         <ul class="nav-links">
-          <li><a href="#profile">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Skills</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo"><a href="#profile">Kunal Chand</a></div>
+      <div class="logo"><a href="#home">Kunal Chand</a></div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu(event)">
           <span></span>
@@ -32,15 +32,15 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
-    <section id="profile">
+    <section id="home">
       <div class="section__pic-container">
         <img src="./assets/profile-pic.png" alt="Kunal Chand profile picture" />
       </div>
@@ -117,13 +117,13 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <!-- <div class="section__pic-container">
           <img
             src="./assets/about-pic.png"
             alt="Profile picture"
             class="about-pic"
           />
-        </div>
+        </div> -->
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -142,7 +142,7 @@
                     class="icon"
                   />
                 </a>
-                Student Assistant<br />(Aug 2023 - Present)
+                Student Assistant (Aug 2023 - Present)
               </p>
               <p id="nrift-container">
                 <a href="https://www.nrifintech.com/" target="_blank">
@@ -153,7 +153,31 @@
                     class="icon"
                   />
                 </a>
-                Associate Software Engineer<br />(Aug 2020 - Aug 2022)
+                Associate Software Engineer (Aug 2020 - Aug 2022)
+              </p>
+
+              <p id="drdo-container">
+                <a href="https://www.nrifintech.com/" target="_blank">
+                  <img
+                    src="./assets/drdo-logo.png"
+                    id="drdo-logo"
+                    alt="DRDO Logo"
+                    class="icon"
+                  />
+                </a>
+                Summer Intern (May 2019 - July 2019)
+              </p>
+
+              <p id="dmrc-container">
+                <a href="https://www.nrifintech.com/" target="_blank">
+                  <img
+                    src="./assets/dmrc-logo.png"
+                    id="dmrc-logo"
+                    alt="DMRC Logo"
+                    class="icon"
+                  />
+                </a>
+                Summer Intern (May 2018 - July 2018)
               </p>
             </div>
             <div class="details-container">
@@ -172,7 +196,7 @@
                     class="icon"
                   />
                 </a>
-                M.S. in CSE<br />(Aug 2022 - Dec 2023)
+                M.S. in CSE (Aug 2022 - Dec 2023)
               </p>
               <p id="bachelors-container">
                 <a href="https://kiit.ac.in/" target="_blank">
@@ -183,7 +207,7 @@
                     class="icon"
                   />
                 </a>
-                B.Tech in CSE<br />(Jul 2016 - May 2020)
+                B.Tech in CSE (Jul 2016 - May 2020)
               </p>
             </div>
           </div>
@@ -203,21 +227,21 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='./#skills'"
       />
     </section>
-    <section id="experience">
+    <section id="skills">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
+      <div class="skills-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="skills-sub-title">Frontend Development</h2>
             <div class="article-container">
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="checkmark icon"
                   class="icon"
                 />
                 <div>
@@ -228,7 +252,7 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="checkmark icon"
                   class="icon"
                 />
                 <div>
@@ -239,7 +263,7 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="checkmark icon"
                   class="icon"
                 />
                 <div>
@@ -250,7 +274,7 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="checkmark icon"
                   class="icon"
                 />
                 <div>
@@ -261,7 +285,7 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="checkmark icon"
                   class="icon"
                 />
                 <div>
@@ -272,7 +296,7 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="checkmark icon"
                   class="icon"
                 />
                 <div>
@@ -283,12 +307,12 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="skills-sub-title">Frontend Development</h2>
             <div class="article-container">
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="checkmark icon"
                   class="icon"
                 />
                 <div>
@@ -299,7 +323,7 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="checkmark icon"
                   class="icon"
                 />
                 <div>
@@ -310,7 +334,7 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="checkmark icon"
                   class="icon"
                 />
                 <div>
@@ -321,7 +345,7 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="checkmark icon"
                   class="icon"
                 />
                 <div>
@@ -343,7 +367,7 @@
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
+      <div class="skills-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
@@ -353,7 +377,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="skills-sub-title project-title">Project One</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -377,7 +401,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="skills-sub-title project-title">Project Two</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -401,7 +425,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="skills-sub-title project-title">Project Three</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -470,15 +494,16 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#profile">Profile</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 Kunal Chand. All Rights Reserved.</p>
+      <p>Copyright &#169; 2023 Kunal Chand</p>
+      <p>All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
   </body>

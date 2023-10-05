@@ -97,6 +97,7 @@ a:hover {
 #hamburger-nav {
   display: none;
   position: fixed;
+  height: 85px;
   width: 100%;
   z-index: 1000; /* or any high number */
   background-color: rgba(255, 255, 255, 0.95); /* white with 80% opacity */
@@ -197,9 +198,9 @@ section {
   display: flex;
 }
 
-/* PROFILE SECTION */
+/* HOME SECTION */
 
-#profile {
+#home {
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -397,7 +398,7 @@ section {
 
 #about {
   position: relative;
-  padding-top: 135px;
+  padding-top: 110px;
 }
 
 .about-containers {
@@ -456,6 +457,8 @@ section {
   text-indent: 10px;
 }
 
+#dmrc-container,
+#drdo-container,
 #nrift-container,
 #student-assistant-container {
   display: flex;
@@ -464,6 +467,8 @@ section {
   padding: 0.75rem;
 }
 
+#dmrc-container,
+#drdo-container,
 #nrift-container {
   text-indent: 20px;
 }
@@ -479,21 +484,21 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+/* SKILLS SECTION */
 
-#experience {
+#skills {
   position: relative;
   padding-top: 135px;
 }
 
-.experience-sub-title {
+.skills-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
-.experience-details-container {
+.skills-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -523,7 +528,7 @@ article .icon {
 
 #projects {
   position: relative;
-  padding-top: 135px;
+  padding-top: 80px;
 }
 
 .color-container {
