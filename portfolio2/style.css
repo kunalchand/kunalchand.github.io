@@ -31,6 +31,22 @@ html {
   opacity: 0.65;
 }
 
+#menu-icon {
+  display: flex;
+  position: fixed;
+  top: 6%;
+  right: 10%;
+  z-index: 9999;
+  cursor: pointer;
+
+  border: 0.5rem solid rgb(85, 85, 85);
+  justify-content: center;
+  align-items: center;
+
+  width: 45px;
+  height: 45px;
+}
+
 p {
   color: rgb(85, 85, 85);
 }
@@ -45,9 +61,8 @@ a,
 /* DESKTOP NAV */
 
 #desktop-nav {
-  position: fixed;
+  position: relative;
   width: 100%;
-  height: 75px;
   z-index: 1000; /* or any high number */
   background-color: rgba(255, 255, 255, 0.95); /* white with 80% opacity */
   padding-top: -130px;
@@ -96,7 +111,7 @@ a:hover {
 
 #hamburger-nav {
   display: none;
-  position: fixed;
+  position: relative;
   height: 85px;
   width: 100%;
   z-index: 1000; /* or any high number */
@@ -119,20 +134,21 @@ a:hover {
 
 .hamburger-icon span {
   width: 100%;
-  height: 4px;
+  height: 2.5px;
   background-color: black;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links {
   position: absolute;
-  top: 140%;
+  top: 190%;
   right: 0;
   background-color: black;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.25s ease-in-out;
+  border-radius: 25px;
 }
 
 .menu-links a {
@@ -161,7 +177,8 @@ a:hover {
 }
 
 .hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
+  width: 40px;
+  transform: rotate(45deg) translate(5px, 10px);
 }
 
 .hamburger-icon.open span:nth-child(2) {
@@ -169,7 +186,8 @@ a:hover {
 }
 
 .hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
+  width: 40px;
+  transform: rotate(-45deg) translate(5px, -10px);
 }
 
 .hamburger-icon span:first-child {
@@ -205,7 +223,6 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
-  padding-top: 135px;
 }
 
 .section__pic-container {
@@ -398,13 +415,13 @@ section {
 
 #about {
   position: relative;
-  padding-top: 110px;
 }
 
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  align-items: center;
 }
 
 .about-details-container {
@@ -427,7 +444,7 @@ section {
   bottom: 2.5rem;
 }
 
-.details-container {
+.experience-container {
   padding: 1.5rem;
   flex: 1;
   background: white;
@@ -437,12 +454,35 @@ section {
   text-align: center;
 }
 
+.education-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  height: fit-content;
+}
+
 #ub-logo {
   transform: scale(0.75);
 }
 
+#kiit-logo {
+  transform: scale(1.125);
+}
+
 #nrif-ft-logo {
-  transform: scale(1.5);
+  transform: scale(1.75);
+}
+
+#drdo-logo {
+  transform: scale(1.35);
+}
+
+#dmrc-logo {
+  transform: scale(1.25);
 }
 
 #bachelors-container,
@@ -454,7 +494,7 @@ section {
 }
 
 #bachelors-container {
-  text-indent: 10px;
+  text-indent: 12px;
 }
 
 #dmrc-container,
@@ -488,7 +528,6 @@ section {
 
 #skills {
   position: relative;
-  padding-top: 135px;
 }
 
 .skills-sub-title {
@@ -528,7 +567,6 @@ article .icon {
 
 #projects {
   position: relative;
-  padding-top: 80px;
 }
 
 .color-container {
