@@ -87,8 +87,12 @@ window.addEventListener("scroll", () => {
   }
 });
 
-goToTopButton.addEventListener("click", () => {
+function goToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+goToTopButton.addEventListener("click", () => {
+  goToTop();
 });
 
 emailIcon.addEventListener("click", function () {

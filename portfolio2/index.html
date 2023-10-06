@@ -11,51 +11,53 @@
   </head>
   <body>
     <img id="go-to-top-button" src="./assets/arrow-up.png" alt="Go to top" />
-    <div id="menu-icon">
+    <div id="menu-icon" onclick="toggleMenu(event)">
       <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu(event)">
+        <div class="hamburger-icon">
           <span></span>
           <span></span>
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#" onclick="toggleMenu(event); goToTop()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu(event)">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu(event)">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu(event)">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu(event)">Contact</a></li>
         </div>
       </div>
     </div>
-    <!-- <nav id="desktop-nav">
-      <div class="logo"><a href="#home">Kunal Chand</a></div>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="">Kunal Chand</a></div>
       <div>
-        <ul class="nav-links">
+        <!-- <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-        </ul>
+        </ul> -->
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo"><a href="#home">Kunal Chand</a></div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu(event)">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+      <div class="logo"><a href="">Kunal Chand</a></div>
+      <div>
+        <!-- <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu(event)">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div> -->
       </div>
-    </nav> -->
+    </nav>
     <section id="home">
       <div class="section__pic-container">
         <img src="./assets/profile-pic.png" alt="Kunal Chand profile picture" />
@@ -510,7 +512,7 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>

@@ -34,8 +34,8 @@ html {
 #menu-icon {
   display: flex;
   position: fixed;
-  top: 6%;
-  right: 10%;
+  top: 4.5%;
+  right: 15%;
   z-index: 9999;
   cursor: pointer;
 
@@ -112,7 +112,6 @@ a:hover {
 #hamburger-nav {
   display: none;
   position: relative;
-  height: 85px;
   width: 100%;
   z-index: 1000; /* or any high number */
   background-color: rgba(255, 255, 255, 0.95); /* white with 80% opacity */
@@ -442,6 +441,16 @@ section {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
 }
 
 .experience-container {
