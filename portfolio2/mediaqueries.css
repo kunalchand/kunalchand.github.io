@@ -45,49 +45,11 @@
   .about-containers {
     margin-top: 0;
   }
-
-  .about-details-container {
-    width: 100%;
-  }
-
-  .about-containers {
-    width: 100%;
-  }
-
-  .details-container {
-    width: 100%;
-    padding: 1.5rem 0.5rem;
-  }
-
-  .experience-container,
-  .education-container {
-    width: 100%;
-    padding: 1.5rem 0.5rem;
-  }
 }
 
 @media screen and (max-width: 800px) {
   .about-containers {
     flex-direction: column;
-  }
-
-  .about-details-container {
-    width: 100%;
-  }
-
-  .about-containers {
-    width: 100%;
-  }
-
-  .details-container {
-    width: 100%;
-    padding: 1.5rem 0.5rem;
-  }
-
-  .experience-container,
-  .education-container {
-    width: 100%;
-    padding: 1.5rem 0.5rem;
   }
 }
 
@@ -150,24 +112,5 @@
   }
   .text-container {
     text-align: justify;
-  }
-
-  .about-details-container {
-    width: 100%;
-  }
-
-  .about-containers {
-    width: 100%;
-  }
-
-  .details-container {
-    width: 100%;
-    padding: 1.5rem 0.5rem;
-  }
-
-  .experience-container,
-  .education-container {
-    width: 100%;
-    padding: 1.5rem 0.5rem;
   }
 }
