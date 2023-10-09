@@ -457,16 +457,7 @@ section {
   text-align: center;
 }
 
-.experience-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
-}
-
+.experience-container,
 .education-container {
   padding: 1.5rem;
   flex: 1;
@@ -475,7 +466,13 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-  height: fit-content;
+  width: 80%;
+  height: 80%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #ub-logo {
@@ -499,17 +496,7 @@ section {
 }
 
 #bachelors-container,
-#masters-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.75rem;
-}
-
-#bachelors-container {
-  text-indent: 12px;
-}
-
+#masters-container,
 #dmrc-container,
 #drdo-container,
 #nrift-container,
@@ -518,12 +505,17 @@ section {
   justify-content: center;
   align-items: center;
   padding: 0.75rem;
+
+  gap: 1.5rem;
 }
 
-#dmrc-container,
+#masters-container,
+#bachelors-container,
 #drdo-container,
-#nrift-container {
-  text-indent: 20px;
+#dmrc-container,
+#nrift-container,
+#student-assistant-container {
+  font-size: 15px;
 }
 
 .section-container {
