@@ -477,6 +477,8 @@ section {
 
 #ub-logo {
   transform: scale(0.75);
+  /* Move the logo slightly to left */
+  margin-left: -1.9rem;
 }
 
 #kiit-logo {
@@ -554,24 +556,17 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
   gap: 0.5rem;
 }
 
 article .icon {
   cursor: default;
-}
-
-.single-skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* PROJECTS SECTION */
