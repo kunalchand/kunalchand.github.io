@@ -45,6 +45,14 @@
   .about-containers {
     margin-top: 0;
   }
+  .experience-container,
+  .education-container {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 800px) {
