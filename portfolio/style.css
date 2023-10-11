@@ -18,8 +18,8 @@ html {
 #go-to-top-button {
   display: none;
   position: fixed;
-  bottom: 35px;
-  right: 30px;
+  bottom: 4.5%;
+  right: 28px;
   z-index: 999;
   cursor: pointer;
 
@@ -35,7 +35,7 @@ html {
   display: flex;
   position: fixed;
   top: 4.5%;
-  right: 30px;
+  right: 28px;
   z-index: 9999;
   cursor: pointer;
 
