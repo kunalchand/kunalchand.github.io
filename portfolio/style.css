@@ -523,6 +523,7 @@ section {
 .section-container {
   gap: 4rem;
   height: 80%;
+  margin-top: 5%;
 }
 
 .section__pic-container {
@@ -535,6 +536,7 @@ section {
 
 #skills {
   position: relative;
+  margin-top: 10%;
 }
 
 .skills-sub-title {
@@ -573,6 +575,7 @@ article .icon {
 
 #projects {
   position: relative;
+  margin-top: 10%;
 }
 
 .color-container {
