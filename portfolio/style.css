@@ -224,6 +224,11 @@ section {
   height: 80vh;
 }
 
+.profile-pic {
+  border-radius: 50%;
+  border: 7px solid black;
+}
+
 .section__pic-container {
   display: flex;
   height: 400px;
