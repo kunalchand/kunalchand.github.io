@@ -17,8 +17,22 @@
     <link rel="icon" href="./assets/me.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+      canvas {
+        z-index: -100;
+        position: fixed;
+        pointer-events: none; /* Add this line */
+      }
+    </style>
   </head>
   <body>
+    <canvas id="particleCanvas"></canvas>
+    <script src="particles.js"></script>
     <a href="#">
       <img id="go-to-top-button" src="./assets/arrow-up.png" alt="Go to top" />
     </a>
