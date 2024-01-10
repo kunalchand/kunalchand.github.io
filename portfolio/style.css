@@ -64,7 +64,7 @@ a,
   position: relative;
   width: 100%;
   z-index: 1000; /* or any high number */
-  background-color: rgba(255, 255, 255, 0); /* white with 80% opacity */
+  background-color: rgba(255, 255, 255, 0.95); /* white with 80% opacity */
   padding-top: -130px;
   flex: wrap;
 }
