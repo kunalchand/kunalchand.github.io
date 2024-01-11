@@ -118,7 +118,7 @@ phoneIcon.addEventListener("click", function () {
 });
 
 locationIcon.addEventListener("click", function () {
-  infoText.textContent = "Buffalo, New York, USA";
+  infoText.textContent = "New York, USA";
   copyButton.style.display = "none";
   emailButton.style.display = "none";
   phoneButton.style.display = "none";
