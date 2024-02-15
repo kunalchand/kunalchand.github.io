@@ -96,7 +96,7 @@ goToTopButton.addEventListener("click", () => {
 });
 
 emailIcon.addEventListener("click", function () {
-  infoText.textContent = "kunalchand234@gmail.com";
+  infoText.textContent = "kchand@buffalo.edu";
   copyButton.style.display = "none";
   emailButton.style.display = "flex";
   phoneButton.style.display = "none";
@@ -146,7 +146,7 @@ copyButton.addEventListener("click", () => {
 });
 
 emailButton.addEventListener("click", () => {
-  const url = "mailto:kunalchand234@gmail.com";
+  const url = "mailto:kchand@buffalo.edu";
   // window.open(url, "_blank");
   window.location.href = url;
 
