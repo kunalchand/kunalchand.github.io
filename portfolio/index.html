@@ -82,31 +82,50 @@
         <h1 class="title">Kunal Chand</h1>
         <p class="section__text__p2">Software Developer</p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onmouseover="showUrl(this, 'Kunal_Chand.pdf')"
-            onclick="window.open('./assets/Kunal_Chand.pdf')"
+          <a
+            href="https://kunalchand.github.io/portfolio/assets/Kunal_Chand.pdf"
+            target="_blank"
+            text-decoration:
+            none;
           >
-            Resume
-          </button>
+            <button
+              class="btn btn-color-2"
+              onmouseover="showUrl(this, 'Kunal_Chand.pdf')"
+              onclick="window.open('./assets/Kunal_Chand.pdf')"
+            >
+              Resume
+            </button>
+          </a>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact
           </button>
           <div id="socials-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="My LinkedIn profile"
-              class="icon"
-              onmouseover="showUrl(this, 'https://www.linkedin.com/in/kunal-chand')"
-              onclick="window.open('https://www.linkedin.com/in/kunal-chand')"
-            />
-            <img
-              src="./assets/github.png"
-              alt="My GitHub profile"
-              class="icon"
-              onmouseover="showUrl(this, 'https://github.com/kunalchand')"
-              onclick="window.open('https://github.com/kunalchand')"
-            />
+            <a
+              href="https://www.linkedin.com/in/kunal-chand"
+              target="_blank"
+              style="display: flex"
+            >
+              <img
+                src="./assets/linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon"
+                onmouseover="showUrl(this, 'https://www.linkedin.com/in/kunal-chand')"
+                onclick="window.open('https://www.linkedin.com/in/kunal-chand')"
+              />
+            </a>
+            <a
+              href="https://github.com/kunalchand"
+              target="_blank"
+              style="display: flex"
+            >
+              <img
+                src="./assets/github.png"
+                alt="My GitHub profile"
+                class="icon"
+                onmouseover="showUrl(this, 'https://github.com/kunalchand')"
+                onclick="window.open('https://github.com/kunalchand')"
+              />
+            </a>
             <!-- <img
               src="./assets/leetcode.png"
               alt="My LeetCode profile"
