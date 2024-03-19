@@ -149,7 +149,8 @@ a:hover {
   top: 190%;
   right: -16px;
   background-color: black;
-  border: 2px solid #2c2c2c;
+  border: 2px solid #cccccc;
+  opacity: 0; /* Modify this through script.js toggleMenu(event) */
   width: fit-content;
   max-height: 0;
   overflow: hidden;
