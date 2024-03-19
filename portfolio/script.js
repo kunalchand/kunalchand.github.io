@@ -6,12 +6,14 @@ function toggleMenu(event) {
     const icon = document.querySelector(".hamburger-icon");
     menu.classList.add("open");
     icon.classList.add("open");
+    menu.style.border = "2px solid #cccccc"; // Add border when menu is opened
     menuOpen = true;
   } else {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
     menu.classList.remove("open");
     icon.classList.remove("open");
+    menu.style.border = "2px solid #2c2c2c"; // Hide/Camoflauge border when menu is closed
     menuOpen = false;
   }
 
