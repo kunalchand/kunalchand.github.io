@@ -297,7 +297,7 @@ section {
 }
 
 .icon2:hover {
-  filter: invert(0%);
+  filter: invert(100%);
   opacity: 1;
 }
 
@@ -335,7 +335,7 @@ section {
 }
 
 .btn-color-2:hover {
-  background: #cccccc;
+  background: white;
   color: black;
   border: #cccccc 0.1rem solid;
 }
@@ -449,7 +449,7 @@ section {
 
 .about-details-container {
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 .about-containers,
