@@ -498,6 +498,12 @@ section {
   align-items: center;
 }
 
+#ub-seas-logo {
+  transform: scale(1.25);
+  /* Move the logo slightly to left */
+  margin-left: -1.9rem;
+}
+
 #ub-logo {
   transform: scale(0.75);
   /* Move the logo slightly to left */
@@ -509,7 +515,7 @@ section {
 }
 
 #nrif-ft-logo {
-  transform: scale(1.75);
+  transform: scale(1.5);
 }
 
 #drdo-logo {
@@ -548,7 +554,7 @@ section {
 .section-container {
   gap: 4rem;
   height: 80%;
-  margin-top: 5%;
+  margin-top: 3.5%;
 }
 
 .section__pic-container {
