@@ -602,6 +602,13 @@ article .icon {
   cursor: default;
 }
 
+.single-skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 /* PROJECTS SECTION */
 
 #projects {
