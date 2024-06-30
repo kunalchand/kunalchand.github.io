@@ -99,7 +99,7 @@ goToTopButton.addEventListener("click", () => {
 
 emailIcon.addEventListener("click", function () {
   infoText.textContent = "kchand@buffalo.edu";
-  copyButton.style.display = "none";
+  copyButton.style.display = "flex";
   emailButton.style.display = "flex";
   phoneButton.style.display = "none";
   mapButton.style.display = "none";
@@ -110,7 +110,7 @@ emailIcon.addEventListener("click", function () {
 
 phoneIcon.addEventListener("click", function () {
   infoText.textContent = "+1 (716) 292-5504";
-  copyButton.style.display = "none";
+  copyButton.style.display = "flex";
   emailButton.style.display = "none";
   phoneButton.style.display = "flex";
   mapButton.style.display = "none";
@@ -173,7 +173,7 @@ mapButton.addEventListener("click", () => {
 
 function showConfirmation() {
   infoText.textContent = "Copied!";
-  infoBar.style.backgroundColor = "#4CAF50";
+  infoBar.style.backgroundColor = "#6808d3";
   copyButton.style.display = "none";
   emailButton.style.display = "none";
   phoneButton.style.display = "none";
