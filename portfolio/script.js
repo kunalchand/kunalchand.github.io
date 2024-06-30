@@ -44,7 +44,7 @@ const mapButton = document.getElementById("map-button");
 let infoBarStatus = 0;
 
 function fadeInInfo(element) {
-  infoBar.style.backgroundColor = "#000";
+  element.style.backgroundColor = "#000";
 
   // Set initial opacity to 0
   element.style.opacity = 0;
@@ -82,7 +82,7 @@ function fadeOutInfo(element) {
 }
 
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 200) {
+  if (window.scrollY > 200) {
     goToTopButton.style.display = "block";
   } else {
     goToTopButton.style.display = "none";
