@@ -180,7 +180,7 @@ a:hover {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 500px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -634,6 +634,13 @@ article .icon {
 
 .project-btn {
   border: #cccccc 0.1rem solid;
+}
+
+/* CERTIFICATES SECTION */
+
+#certificates {
+  position: relative;
+  margin-top: 10%;
 }
 
 /* CONTACT */

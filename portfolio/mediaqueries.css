@@ -7,7 +7,8 @@
     flex-wrap: wrap;
   }
   #contact,
-  #projects {
+  #projects,
+  #certificates {
     height: fit-content;
   }
 }
