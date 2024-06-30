@@ -392,7 +392,7 @@ section {
 
 #email-button {
   display: flex;
-  background-color: #ff1500;
+  background-color: #ff6200d1;
   color: #fff;
   border: none;
   border-radius: 100px;
@@ -401,7 +401,7 @@ section {
 }
 
 #email-button:hover {
-  background-color: #ff1500b2;
+  background-color: #ff8c0094;
   color: #fff;
 }
 
