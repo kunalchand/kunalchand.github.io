@@ -219,10 +219,6 @@ section {
   min-height: fit-content;
 }
 
-.section-container {
-  display: flex;
-}
-
 /* HOME SECTION */
 
 #home {
@@ -444,7 +440,7 @@ section {
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .about-details-container {
@@ -552,9 +548,10 @@ section {
 }
 
 .section-container {
+  display: flex;
   gap: 4rem;
-  height: 80%;
-  margin-top: 3.5%;
+  /* height: 80%; */
+  margin-top:2%;
 }
 
 .section__pic-container {
