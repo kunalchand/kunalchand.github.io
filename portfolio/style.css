@@ -494,6 +494,10 @@ section {
   align-items: center;
 }
 
+#trulogik-logo {
+  transform: scale(1.35);
+}
+
 #ub-seas-logo {
   transform: scale(1.25);
   /* Move the logo slightly to left */
@@ -528,7 +532,8 @@ section {
 #drdo-container,
 #nrift-container,
 #student-assistant-container,
-#volunteer-research-assistant-container {
+#volunteer-research-assistant-container,
+#trulogik-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -543,7 +548,8 @@ section {
 #dmrc-container,
 #nrift-container,
 #student-assistant-container,
-#volunteer-research-assistant-container {
+#volunteer-research-assistant-container,
+#trulogik-container {
   font-size: 15px;
 }
 
