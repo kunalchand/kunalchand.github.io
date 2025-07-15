@@ -440,7 +440,7 @@ section {
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .about-details-container {
@@ -486,7 +486,7 @@ section {
   border-color: rgb(163, 163, 163);
   text-align: center;
   width: 80%;
-  height: 80%;
+  height: 90%;
 
   display: flex;
   flex-direction: column;
