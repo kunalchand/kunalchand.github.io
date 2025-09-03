@@ -192,3 +192,10 @@ function showUrl(img, url_link) {
   img.dataset.url = url_link;
   img.title = img.dataset.url;
 }
+
+function setFreshResumeUrl() {
+  const link = document.getElementById("resumeLink");
+  const baseUrl =
+    "https://kunalchand.github.io/portfolio/assets/Kunal_Chand_resume.pdf";
+  link.href = baseUrl + "?v=" + new Date().getTime();
+}
