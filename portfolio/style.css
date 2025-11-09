@@ -533,7 +533,8 @@ section {
 #nrift-container,
 #student-assistant-container,
 #volunteer-research-assistant-container,
-#trulogik-container {
+#trulogik-container,
+#o2-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -549,7 +550,8 @@ section {
 #nrift-container,
 #student-assistant-container,
 #volunteer-research-assistant-container,
-#trulogik-container {
+#trulogik-container,
+#o2-container {
   font-size: 15px;
 }
 
@@ -557,7 +559,7 @@ section {
   display: flex;
   gap: 4rem;
   /* height: 80%; */
-  margin-top:2%;
+  margin-top: 2%;
 }
 
 .section__pic-container {
