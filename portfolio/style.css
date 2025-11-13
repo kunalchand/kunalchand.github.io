@@ -451,6 +451,7 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
+  align-items: center;
 }
 
 .about-pic {
@@ -486,7 +487,7 @@ section {
   border-color: rgb(163, 163, 163);
   text-align: center;
   width: 80%;
-  height: 90%;
+  height: fit-content;
 
   display: flex;
   flex-direction: column;
