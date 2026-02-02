@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -30,7 +30,16 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#" onclick="toggleMenu(event); goToTop()">Home</a></li>
+          <li>
+            <a
+              href="#"
+              onclick="
+                toggleMenu(event);
+                goToTop();
+              "
+              >Home</a
+            >
+          </li>
           <li><a href="#about" onclick="toggleMenu(event)">About</a></li>
           <li><a href="#skills" onclick="toggleMenu(event)">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu(event)">Projects</a></li>
@@ -202,6 +211,20 @@
               />
               <h3>Experience</h3>
               <p id="trulogik-container">
+                <a href="https://www.gradientcert.com/" target="_blank">
+                  <img
+                    src="./assets/general-company-logo.png"
+                    id="gradient-certification-logo"
+                    alt="Gradient Certification Logo"
+                    class="icon"
+                  />
+                </a>
+                Gradient Certification Inc
+                <br />
+                AI Software Engineer
+                <br />(Feb 2026 - Present)
+              </p>
+              <p id="trulogik-container">
                 <a href="https://trulogik.com/" target="_blank">
                   <img
                     src="./assets/trulogik-logo.png"
@@ -226,7 +249,7 @@
                 </a>
                 Trulogik Inc
                 <br />
-                Software Engineer
+                Full Stack Engineer
                 <br />(Jul 2024 - Jul 2025)
               </p>
               <!-- <p id="volunteer-research-assistant-container">
@@ -271,7 +294,7 @@
                 (Aug 2020 - Jul 2022)
               </p>
 
-              <p id="drdo-container">
+              <!-- <p id="drdo-container">
                 <a href="https://www.drdo.gov.in/" target="_blank">
                   <img
                     src="./assets/drdo-logo.png"
@@ -285,7 +308,7 @@
                 Summer Intern
                 <br />
                 (May 2019 - July 2019)
-              </p>
+              </p> -->
 
               <!-- <p id="dmrc-container">
                 <a href="https://www.delhimetrorail.com/" target="_blank">
@@ -714,7 +737,12 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="window.open('https://www.linkedin.com/learning/certificates/1364e6591baa15e233982c2b6aa62a29acaa9405d138a76f1fc9c0480c98e0b6','_blank')"
+                onclick="
+                  window.open(
+                    'https://www.linkedin.com/learning/certificates/1364e6591baa15e233982c2b6aa62a29acaa9405d138a76f1fc9c0480c98e0b6',
+                    '_blank',
+                  )
+                "
               >
                 Certificate
               </button>
@@ -734,7 +762,12 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="window.open('https://www.linkedin.com/learning/certificates/103cf630d28af0347069a8fd395ad9fab94e47923118dcd58bbe157469d7dc7e','_blank')"
+                onclick="
+                  window.open(
+                    'https://www.linkedin.com/learning/certificates/103cf630d28af0347069a8fd395ad9fab94e47923118dcd58bbe157469d7dc7e',
+                    '_blank',
+                  )
+                "
               >
                 Certificate
               </button>
