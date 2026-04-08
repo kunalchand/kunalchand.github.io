@@ -196,6 +196,6 @@ function showUrl(img, url_link) {
 function updateResumeLink() {
   const link = document.getElementById("resumeLink");
   const baseUrl =
-    "https://kunalchand.github.io/portfolio/assets/Kunal_Chand_resume.pdf";
+    "https://kunalchand.github.io/profile/assets/Kunal_Chand_resume.pdf";
   link.href = `${baseUrl}?v=${Date.now()}`;
 }
