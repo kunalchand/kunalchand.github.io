@@ -500,6 +500,12 @@ section {
   border-radius: 50%;
 }
 
+#onindus-logo {
+  transform: scale(1.35);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 #trulogik-logo {
   transform: scale(1.35);
 }
@@ -539,6 +545,8 @@ section {
 #nrift-container,
 #student-assistant-container,
 #volunteer-research-assistant-container,
+#onindus-container,
+#gradient-container,
 #trulogik-container,
 #o2-container {
   display: flex;
@@ -556,6 +564,8 @@ section {
 #nrift-container,
 #student-assistant-container,
 #volunteer-research-assistant-container,
+#onindus-container,
+#gradient-container,
 #trulogik-container,
 #o2-container {
   font-size: 15px;
